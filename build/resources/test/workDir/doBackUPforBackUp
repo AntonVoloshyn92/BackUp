@@ -1,0 +1,34 @@
+
+    public void doBackUp(File sourceFile, File dest, String sourceDir) throws IOException {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy-HH:mm:ss");
+        Date todayDate = new Date();
+
+//        String dir = sourceFile.getAbsolutePath().replace(sourceDir, "");
+        String dir = sourceFile.getAbsolutePath().substring(sourceDir.length());
+//        System.out.println(dir + " dir");
+//        String name = dir.replace(sourceFile.getName(), "");
+//        String x = dir.substring(0, dir.lastIndexOf(sourceFile.getName()) - 1);
+//        System.out.println(name + " name");
+//        System.out.println(x + " !!!!!");
+//        String pathToFile = name.substring(0, name.length() - 1);
+        String pathToFile = dir.substring(0, dir.lastIndexOf(sourceFile.getName()) - 1);
+//        System.out.println(pathToFile + " pathToFile");
+        String pathToDest = dest.getAbsolutePath();
+//        System.out.println(pathToDest + " pathToDest");
+
+        File file;
+        if (!pathToDest.contains(pathToFile)) {
+            file = new File(pathToDest + pathToFile);
+        } else {
+            file = new File(pathToDest);
+        }
+//        System.out.println(file.getAbsolutePath() + " file");
+        if (!file.exists()) {
+            if (!file.mkdirs()) {
+                throw new RuntimeException("Directory was not created");
+            }
+        }
+        Files.copy(sourceFile.toPath(), file.toPath().resolve(simpleDateFormat.format(todayDate) +
+                Const.CONST.SplitToFileName + sourceFile.getName()));
+        System.out.println("File Copied");
+    }
