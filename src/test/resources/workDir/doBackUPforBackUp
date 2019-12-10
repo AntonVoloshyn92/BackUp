@@ -29,6 +29,23 @@
             }
         }
         Files.copy(sourceFile.toPath(), file.toPath().resolve(simpleDateFormat.format(todayDate) +
-                Const.CONST.SplitToFileName + sourceFile.getName()));
+                app.Const.CONST.SplitToFileName + sourceFile.getName()));
         System.out.println("File Copied");
     }
+
+
+
+         /*Thread run = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while(true){
+                        try {
+                            runner.doBackup();
+                            Thread.sleep(10_000); //1000 - 1 sek
+                        } catch (InterruptedException | IOException ex) {
+                            ex.printStackTrace();
+                        }
+                    }
+                }
+            });
+            run.start();*/

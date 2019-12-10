@@ -1,0 +1,14 @@
+¶2019-11-20 14:38:00 INFO  SourceDirectoryProcessor:19 - File path for directoryContentFilter /Users/antonvoloshyn/IdeaProjects/BackUp/src/test/resources/backupRunEqualsMapTestSource
+i2019-11-20 14:38:00 INFO  SourceDirectoryProcessor:32 - return list file from source path, list size = 2
+C2019-11-20 14:38:00 INFO  BackupRunner:68 - Directory is not empty
+F2019-11-20 14:38:00 INFO  BackupRunner:86 - fist copy of file Two.txt
+^2019-11-20 14:38:00 INFO  FileUtils:49 - File path + /Users/antonvoloshyn/IdeaProjects/BackUp
+42019-11-20 14:38:00 INFO  FileUtils:57 - Doing copy
+ File Copied, name file: Two.txt
+—2019-11-20 14:38:00 INFO  BackupRunner:89 - Copy file /Users/antonvoloshyn/IdeaProjects/BackUp/src/test/resources/backupRunEqualsMapTestSource/Two.txt
+;2019-11-20 14:38:00 INFO  FileUtils:73 - files was changed
+F2019-11-20 14:38:00 INFO  BackupRunner:86 - fist copy of file One.txt
+^2019-11-20 14:38:00 INFO  FileUtils:49 - File path + /Users/antonvoloshyn/IdeaProjects/BackUp
+42019-11-20 14:38:00 INFO  FileUtils:57 - Doing copy
+ File Copied, name file: One.txt
+—2019-11-20 14:38:00 INFO  BackupRunner:89 - Copy file /Users/antonvoloshyn/IdeaProjects/BackUp/src/test/resources/backupRunEqualsMapTestSource/One.txt

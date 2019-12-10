@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.BackupRunnerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-20T12:38:00" hostname="MacBook-Pro-Anton.local" time="0.239">
+  <properties/>
+  <testcase name="BackupRunEqualsMapTest" classname="app.BackupRunnerTest" time="0.239"/>
+  <system-out><![CDATA[2019-11-20 14:38:00 INFO  SourceDirectoryProcessor:19 - File path for directoryContentFilter /Users/antonvoloshyn/IdeaProjects/BackUp/src/test/resources/backupRunEqualsMapTestSource
+2019-11-20 14:38:00 INFO  SourceDirectoryProcessor:32 - return list file from source path, list size = 2
+2019-11-20 14:38:00 INFO  BackupRunner:68 - Directory is not empty
+2019-11-20 14:38:00 INFO  BackupRunner:86 - fist copy of file Two.txt
+2019-11-20 14:38:00 INFO  FileUtils:49 - File path + /Users/antonvoloshyn/IdeaProjects/BackUp
+2019-11-20 14:38:00 INFO  FileUtils:57 - Doing copy
+File Copied, name file: Two.txt
+2019-11-20 14:38:00 INFO  BackupRunner:89 - Copy file /Users/antonvoloshyn/IdeaProjects/BackUp/src/test/resources/backupRunEqualsMapTestSource/Two.txt
+2019-11-20 14:38:00 INFO  FileUtils:73 - files was changed
+2019-11-20 14:38:00 INFO  BackupRunner:86 - fist copy of file One.txt
+2019-11-20 14:38:00 INFO  FileUtils:49 - File path + /Users/antonvoloshyn/IdeaProjects/BackUp
+2019-11-20 14:38:00 INFO  FileUtils:57 - Doing copy
+File Copied, name file: One.txt
+2019-11-20 14:38:00 INFO  BackupRunner:89 - Copy file /Users/antonvoloshyn/IdeaProjects/BackUp/src/test/resources/backupRunEqualsMapTestSource/One.txt
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
